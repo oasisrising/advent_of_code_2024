@@ -1,7 +1,7 @@
 # Load data
-#file = open('day01/test_input.txt').read();
-file  = open('day01/input.txt').read();
-#print(file);
+file = open('day01/test_input.txt').read();
+# file  = open('day01/input.txt').read();
+print(file);
 
 lines = file.splitlines();
 #print(lines);
@@ -27,6 +27,7 @@ list2.sort();
 
 distance = 0;
 # Find the distances
+
 for i in range(len(list1)):
     distance += abs(int(list1[i]) - int(list2[i]));
 
